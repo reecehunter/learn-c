@@ -2,7 +2,7 @@
 #include <string.h>
 
 // An enum defines set of named integer constants.
-enum week{Sun, Mon, Tue, Thur, Fri, Sat};
+enum week{Sun = 1, Mon = 2, Tue = 3, Wed = 4, Thur = 5, Fri = 6, Sat = 7};
 
 // A struct groups related values together.
 struct Human {
@@ -19,7 +19,7 @@ int main() {
 	enum week day = Fri;
 
 	// Print the enum integer value.
-	printf("Friday is the %d day of the week.\n", day + 1);	
+	printf("Friday is the %d day of the week.\n", day);
 
 
 	// STRUCT //
