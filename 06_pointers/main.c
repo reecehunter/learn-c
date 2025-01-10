@@ -12,8 +12,8 @@ int main() {
 
 	char vegetables[5][25] = {"Carrot", "Broccoli", "Squash", "Celery", "Cucumber"};
 	for(int i = 0; i < 5; i++) {
-		char veggie[] = vegetables[i];
-		printf("%s: ", veggie);
+		char *veggie = vegetables[i];
+		printf("Vegetable name: %s (memory address: %p).\n", veggie, veggie);
 	}
 
 	return 0;
